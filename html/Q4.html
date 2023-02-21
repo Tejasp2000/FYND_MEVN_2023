@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function isEvenorodd(num, callbackfunction) {
+        if (5 % 2 === 0) {
+          callbackfunction(true);
+        } else {
+          callbackfunction(false);
+        }
+      }
+      function handleResult(result) {
+        document.getElementById("demo").innerHTML = result;
+      }
+
+      isEvenorodd(4, handleResult);
+      isEvenorodd(7, handleResult);
+    </script>
+  </body>
+</html>

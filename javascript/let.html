@@ -6,11 +6,12 @@
             let x=10;
             var y=10;
             {
-                let x=2;
+
+                let x=2; //here value of let keyword is not updated so output is not changed it is 10
                 var y=20;
             }
             document.getElementById("test").innerHTML=x;
-           // document.getElementById("test").innerHTML=y;
+            document.getElementById("test").innerHTML=y;
         </script>
     </body>
 </html>

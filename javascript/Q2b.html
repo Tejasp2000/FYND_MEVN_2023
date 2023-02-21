@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Hoisting</title>
+    </head>
+    <body>
+        <script>
+            let x=10;
+            var y=10;
+            {
+                let x=2;    //here value of let keyword is not updated so output is not changed it is 10
+                var y=20;   //here value of var is updated so o/p is 20 
+            }
+            document.writeln("x is"+x+"<br>");
+            document.writeln("y is"+y+"<br>");
+        </script>
+        
+
+    </body>
+</html>
