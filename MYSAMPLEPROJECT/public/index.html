@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Node.js/Express.js Sample Project</title>
+  </head>
+  <body>
+    <h1>Welcome to my Node.js/Express.js Sample Project</h1>
+    <button onclick="Click()">Click</button>
+    <p id="hello"></p>
+
+    <script>
+      function Click() {
+        fetch("/hello")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("hello").textContent = data;
+          });
+      }
+    </script>
+  </body>
+</html>
